@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Campo de texto para mostrar los valores y resultados -->
+        <input type="text" id="pantalla" readonly> <!-- Campo de texto de solo lectura -->
+        <br> <!-- Salto de línea -->
+
+        <!-- Fila de botones 1, 2, 3 y + -->
+        <input type="button" value="1" onclick="agregarValor('1')">
+        <input type="button" value="2" onclick="agregarValor('2')">
+        <input type="button" value="3" onclick="agregarValor('3')">
+        <input type="button" value="+" onclick="agregarValor('+')">
+        <br> <!-- Salto de línea -->
+
+        <!-- Fila de botones 4, 5, 6 y - -->
+        <input type="button" value="4" onclick="agregarValor('4')">
+        <input type="button" value="5" onclick="agregarValor('5')">
+        <input type="button" value="6" onclick="agregarValor('6')">
+        <input type="button" value="-" onclick="agregarValor('-')">
+        <br> <!-- Salto de línea -->
+
+        <!-- Fila de botones 7, 8, 9 y * -->
+        <input type="button" value="7" onclick="agregarValor('7')">
+        <input type="button" value="8" onclick="agregarValor('8')">
+        <input type="button" value="9" onclick="agregarValor('9')">
+        <input type="button" value="*" onclick="agregarValor('*')">
+        <br> <!-- Salto de línea -->
+
+        <!-- Fila de botones 0, ., / y = -->
+        <input type="button" value="0" onclick="agregarValor('0')">
+        <input type="button" value="." onclick="agregarValor('.')">
+        <input type="button" value="/" onclick="agregarValor('/')">
+        <input type="button" value="=" onclick="calcular()">
+        <br> <!-- Salto de línea -->
+
+        <!-- Botón de borrado -->
+        <input type="button" value="C" onclick="borrarValor()">
+
+    </div>
+
+    <script src="/src/index.js"></script>
+    
+</body>
+</html>
